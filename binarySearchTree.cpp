@@ -104,11 +104,11 @@ bool BinarySearchTree::findHelper(BinaryTreeNode *node, int value) {
 
 //function to remove a node from the Binary Search Tree
 void BinarySearchTree::removeHelper(BinaryTreeNode *&node, int value) {
-    if (node == nullptr) { //the tree/subtree is empty, nothing to do
+    if (node == nullptr) {
         return;
-    } else if (value < node->value) { //the value is less than the node's value, remove from the left subtree
+    } else if (value < node->value) { //value is less than the node's value, remove from the left subtree
         removeHelper(node->left, value);
-    } else if (value > node->value) { //the value is more than the node's value, remove from the right subtree
+    } else if (value > node->value) { // value is more than the node's value, remove from the right subtree
         removeHelper(node->right, value);
     } else { // If the node is found
         //node has no left child

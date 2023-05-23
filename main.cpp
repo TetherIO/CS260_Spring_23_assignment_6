@@ -1,7 +1,7 @@
 #include <iostream>
 #include "binarySearchTree.h"
 
-// Helper function for testing search
+//  function for testing search
 void testSearch(BinarySearchTree& bst, int value) {
     std::cout << "Searching for " << value << " ... ";
     if (bst.find(value)) {
@@ -11,13 +11,13 @@ void testSearch(BinarySearchTree& bst, int value) {
     }
 }
 
-// Helper function for testing insert
+//  function for testing insert
 void testInsert(BinarySearchTree& bst, int value) {
     std::cout << "Inserting " << value << std::endl;
     bst.insert(value);
 }
 
-// Helper function for testing remove
+//  function for testing remove
 void testRemove(BinarySearchTree& bst, int value) {
     std::cout << "Removing " << value << std::endl;
     bst.remove(value);
@@ -37,16 +37,16 @@ int main() {
     testInsert(bst, 64);
     testInsert(bst, 64);
 
-    // Testing find function
+    // find function
     testSearch(bst, -6);
     testSearch(bst, -7);
     testSearch(bst, 99);
 
-    // Test remove
+    // remove
     testRemove(bst, -6);  // "Removing -6"
     testSearch(bst, -6);  // Searching for -6 ... Not Found
 
-    // Test traversal
+    // traversal
     std::cout << "In-order traversal: "; // -5 -4 0 16 32 42 64 64
     bst.inorderTraversal();
     std::cout << "Pre-order traversal: "; // 42 0 -5 -4 32 16 64 64
