@@ -4,17 +4,20 @@ Binary search tree
 ## Requirement 1:
 Each function has at least one test associated. The test functions include 'testSearch', 'testInsert', and 'testRemove', which test the functionalities of the tree.
 
-(insert screenshot)
+![](https://github.com/TetherIO/CS260_Spring_23_assignment_6/blob/main/simpletests.png)
 
 ## Requirement 2:
 -Nodes to store values
 (BinaryTreeNode struct)
+![](https://github.com/TetherIO/CS260_Spring_23_assignment_6/blob/main/nodestruct.png)
 
 -Add Function
 (insert & insertHelper)
+![](https://github.com/TetherIO/CS260_Spring_23_assignment_6/blob/main/insertfunction.png)
 
 -Remove Function
 (remove & removeHelper)
+![](https://github.com/TetherIO/CS260_Spring_23_assignment_6/blob/main/removefunction.png)
 
 Tree Traversal
 (inorderTraversal, preorderTraversal, postorderTraversal, and breadthFirstTraversal)
